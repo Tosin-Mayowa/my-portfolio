@@ -1,0 +1,17 @@
+/* logo */
+.logo {
+    width: 10.25rem;
+}
+
+
+
+/* Nav Links */
+nav a.nav-link {
+    font-weight: 500;
+    letter-spacing: 0.0375rem;
+    cursor: pointer;
+}
+
+nav ul li {
+    text-transform: uppercase;
+}
