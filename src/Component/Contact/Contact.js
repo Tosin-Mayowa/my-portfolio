@@ -65,7 +65,7 @@ useEffect(()=>{
   :
      
       <div>
-       <h3 className='Form-titletwo'>Thank you for your message</h3>
+       <h3 className='Form-titletwo' style={{ marginTop:'10px' }}>Thank you for your message</h3>
        </div>
      
      

@@ -1,4 +1,4 @@
-import React,{useState} from 'react';
+import React,{useState,useEffect} from 'react';
 import {Paper,Typography, Grid,Button,Avatar} from '@mui/material';
 import './Header.css';
 import Resume from '../Resume/Resume';
@@ -8,7 +8,11 @@ import Skills from '../Skills/Skills';
 
 const Header = () => {
     const [isClicked, setIsclicked]=useState(false);
-  
+  useEffect(()=>{
+    setTimeout(()=>{
+      setIsclicked(false);
+    },5000);
+  })
     return (
        
    <Grid container >
