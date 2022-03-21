@@ -1,8 +1,10 @@
 import React from 'react';
-import {Paper,Typography, Grid,Button} from '@mui/material';
+import {Paper} from '@mui/material';
+import './Resume.css';
 export default function Resume(){
+   
 return(
-   <Paper style={{ padding:'10px' }}>
+   <div className='hidescroll' style={{ padding:'10px'}}>
    <h3 >Personal Profile</h3>
    <p>I am a Javascript React Developer with great passion for solving complex problems, I love making things function and  I am always ready to learn. I also have eyes for beautiful design, my strength has always been solving complex problems, and making things work. The more reason I love Javascript.</p>
 <br/>
@@ -21,6 +23,6 @@ return(
  
 
 </ul>
-   </Paper>
+   </div>
 )
 }

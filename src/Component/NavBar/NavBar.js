@@ -1,41 +1,31 @@
-import React from 'react';
+import React,{useState} from 'react'
 import './NavBar.css';
-import Logo from '../Image/logo.png';
-import {NavLink,Routes,Route} from 'react-router-dom';
+import {Link} from 'react-router-dom';
+import Logo from '../Image/realLogo.png';
+import {FaBars,FaTimes,FaLinkedin,FaGithub} from 'react-icons/fa'
+
 const NavBar = () => {
+  const [isClick,setIsClick]=useState(true);
   return (
-    <nav className="navbar  navbar-expand-lg navbar-light bg-dark">
-  <div className="container d-flex justify-content-around">
-
-    <a className="navbar-brand text-white" href="#"><img src={Logo} className="logo" alt="logo..."></img></a>
-    <button className="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span className="navbar-toggler-icon"></span>
-    </button>
-  
-    <div className="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
-        <li className="nav-item">
-          <a className="nav-link text-white active" aria-current="page" href="#">Home</a>
-        </li>
-        <li className="nav-item">
-         <NavLink>Hello</NavLink>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link text-white" href="#">Services</a>
-        </li>
-
-        <li className="nav-item">
-          <a className="nav-link text-white" href="#">Portfolio</a>
-        </li>
-        
-        <li className="nav-item">
-          <a className="nav-link text-white" href="#">contact</a>
-        </li>
-      </ul>
-    </div>
-  </div>
+    <header className='header'>
+    <nav className='NavBar'>
+<div className='logo-menu'>
+<img className='logo navbar-brand' src={Logo} alt='logo...'/>
+<a href='https://www.linkedin.com/in/tosin-adejumola-389992137'><FaLinkedin/></a>
+<a style={{ marginLeft:'4px' }} href='https://github.com/Tosin-Mayowa/'><FaGithub/></a>
+</div>
+<ul className={isClick?'Nav-ul':'Nav-ul show'}>
+<li className='Nav-item'><Link className={isClick?'Nav-link':'link-show'} to='/'>Home</Link></li>
+<li className='Nav-item'><Link className={isClick?'Nav-link':'link-show'} to='/about'>About me</Link></li>
+<li className='Nav-item'><Link className={isClick?'Nav-link':'link-show'} to='/portfolio'>Portfolio</Link></li>
+<li className='Nav-item'><Link className={isClick?'Nav-link':'link-show'} to='/contact'>Contact</Link></li>
+</ul>
 </nav>
+  <div className='menu-bar'>
+{isClick?(<FaBars size={20} style={{color:'#fff'}} onClick={()=>setIsClick(!isClick)}/>):(<FaTimes size={20} style={{color:'#fff'}} onClick={()=>setIsClick(!isClick)}/>)}
+  </div>
+  </header>
   )
 }
 
-export default NavBar
+export default NavBar;

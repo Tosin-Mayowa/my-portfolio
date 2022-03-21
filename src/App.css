@@ -1,4 +1,23 @@
+/* App main div */
 
 
+.App {
+    height: 100vh;
+}
 
-/* menu links */
+.App-section {
+    width: 100%;
+    height: calc(100vh-100px);
+    position: relative;
+    top: 100px;
+    scroll-snap-type: y mandatory;
+    scrollbar-width: none;
+    /* for firefox*/
+
+
+}
+
+.App-section::-webkit-scrollbar{
+    display:none;
+}
+/* App Sections*/

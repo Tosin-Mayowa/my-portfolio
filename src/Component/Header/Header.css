@@ -1,8 +1,35 @@
 .Header-span {
     color: rgba(0, 0, 0, 0.9);
 }
+.Typo-left{
+font-size: 42px;
+}
 
-.Avatar-name {
+.Avatar-div {
     text-align: center;
-    
+
+}
+
+@media(max-width:768px) {
+    .Avatar-title {
+        font-size: 25px;
+    }
+
+    .side-paper {
+        height: 150px !important;
+        padding-bottom: 10px !important;
+
+    }
+
+    .side-typo {
+        font-size: 15px !important;
+        margin: 10px auto !important;
+    }
+
+    .side-button{
+        width: 70px !important;
+        font-size: 10px;
+        height: auto;
+        
+    }
 }

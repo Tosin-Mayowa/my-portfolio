@@ -1,0 +1,14 @@
+.hidescroll::-webkit-scrollbar {
+    display: none;
+}
+
+.hidescroll {
+    overflow-y: scroll;
+}
+
+
+.hidescroll {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+}
