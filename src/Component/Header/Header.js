@@ -11,7 +11,7 @@ const Header = () => {
   useEffect(()=>{
     setTimeout(()=>{
       setIsclicked(false);
-    },5000);
+    },10000);
   })
     return (
        
