@@ -1,5 +1,5 @@
 import React from 'react'
-import {Paper, Grid} from '@mui/material';
+
 
 import './About.css';
 const About = () => {

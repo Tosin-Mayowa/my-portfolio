@@ -1,5 +1,5 @@
 import React,{useState,useEffect} from 'react';
-import {Paper,Typography, Grid,Button,Avatar} from '@mui/material';
+import {Paper, Grid, Button, Avatar} from '@mui/material';
 import './Header.css';
 import Resume from '../Resume/Resume';
 import Mayowa from '../Image/Mayowa.jpg';
