@@ -11,8 +11,8 @@ const NavBar = () => {
     <nav className='NavBar'>
 <div className='logo-menu'>
 <img className='logo navbar-brand' src={Logo} alt='logo...'/>
-<a href='https://www.linkedin.com/in/tosin-adejumola-389992137'><FaLinkedin/></a>
-<a style={{ marginLeft:'4px' }} href='https://github.com/Tosin-Mayowa/'><FaGithub/></a>
+<a style={{color:'white'}} href='https://www.linkedin.com/in/tosin-adejumola-389992137' size={25}><FaLinkedin/></a>
+<a style={{ marginLeft:'6px', color:'white' }} href='https://github.com/Tosin-Mayowa/' size={25}><FaGithub/></a>
 </div>
 <ul className={isClick?'Nav-ul':'Nav-ul show'}>
 <li className='Nav-item'><Link className={isClick?'Nav-link':'link-show'} to='/'>Home</Link></li>

@@ -2,36 +2,58 @@
     text-align: center;
     width: 100%;
     height: 100vh;
+    position: relative;
+    padding-top: 50px;
 }
 
 .Portfolio-H {
     font-size: 40px;
     margin-top: 10px;
     font-weight: 700;
+    margin-top: 50px;
 }
 
-.Inner-H {
-    font-size: 25px;
-    font-weight: 500;
+.card {
+    width: 400px;
+    height: 200px;
+    border-radius: 10px;
+    border: 2px solid;
+    background-color: #252627 !important;
+    color: #ffffff !important;
+    padding: 15px 8px;
+    margin: 0 auto;
+    margin-bottom: -300px;
+
 }
 
-@media(max-width:768px) {
-    .Portfolio-H {
-        font-size: 30px;
-        margin-top: 8px;
-        font-weight: 700;
+.arrow {
+    position: absolute;
+    margin: 0 auto;
+    margin-top: 200px;
+
+}
+
+.arrowR {
+    margin-left: 550px;
+
+}
+
+.arrowL {
+    margin-left: 300px;
+
+}
+
+
+@media(max-width:960px) {
+
+    .arrowR {
+        margin-left: 400px !important;
+
     }
 
-    .Inner-H {
-        font-size: 20px;
-        font-weight: 500;
+    .arrowL {
+        margin-left: 150px !important;
+
     }
 
-    .ListItem{
-        padding-right: 3px;
-    }
-
-    .Portfolio-p{
-        font-size: 15px;
-    }
 }

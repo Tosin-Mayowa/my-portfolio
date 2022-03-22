@@ -1,26 +1,55 @@
-import React from 'react'
-import {Paper,Typography, Grid,Button,Avatar} from '@mui/material';
+import React,{useState} from 'react'
+import {Paper} from '@mui/material';
 import './Portfolio.css';
-import {FaGithub} from 'react-icons/fa'
+import {FaGithub,FaAngleLeft, FaAngleRight} from 'react-icons/fa'
+const data=[
+  {id:1, title:'My Portfolio Website', text:'I buit this project using React,Mui,React libraries',src:'https://github.com/Tosin-Mayowa/my-portfolio' },
+  {id:1, title:'Todo', text:'I buit this project using Reacthooks and MaterialUI',src:'https://github.com/Tosin-Mayowa/todo-app-hooks' }
+  
+]
 const Portfolio = () => {
+const [index,setIndex]=useState(0);
+const [state, setState]=useState(data)
+const dataContent=data[index];
+const {title,text,src}=dataContent;
+const handleLeft=()=>{
+  if(index<0){
+    setIndex(data.length-1)
+  }
+   if(index>0){
+    setIndex(index-1)
+  }
+  if(index===0){
+     setIndex(index)
+  }
+}
+const handleRight=()=>{
+ if(index<0){
+    setIndex(index+1)
+  }
+   if(index>0 && index<data.length-1 ){
+    setIndex(index+1)
+  }
+  if(index===0){
+     setIndex(index+1)
+  }
+}
   return (
    <div className='Portfolio'>
-   <h2  className='Portfolio-H'>Project List and GitHub links</h2>
-   <ul  className='List'>
-   <li  className='ListItem'>
-   <h3 className='Inner-H'>Todo App:</h3>
-   <p className='Portfolio-p'>In this project I use Hooks(useState,custom hooks, and useEffect) for state management,<br/> I used UseEffect to store todo task in the local storage(this is allowed for small project) so that, each time we refresh the page the data will still be retained on the browser. The useEffect is made to run only when new task is added. I use Material ui for the design.</p>
-   <a href="https://github.com/Tosin-Mayowa/todo-app-hooks"><FaGithub size={20}/></a>
-   </li>
-   <li className='ListItem'>
- <h3 className='Inner-H'>Sign in form:</h3>
-   <p className='Portfolio-p' style={{ color:'#bb0a21' }}>This is a form I built using context Api to transfer data. <br/> This form can change from one language to another also the background can be switched to dark mode</p>
-   <a href="https://github.com/Tosin-Mayowa/"><FaGithub size={20}/></a>
-   </li>
-   </ul>
-
-   <p className='Portfolio-p'>You can visit my github account where all my projects are stored,I am currently working on some other projects using Nextjs, and redux</p>
-   </div>
+   <h2  className='Portfolio-H'>Project slide and GitHub links</h2>
+   <Paper elevation={0} className='card'>
+   <h3>{title}</h3>
+      <p>{text}</p>
+      <a href={src}><FaGithub size={25}/></a>
+   </Paper>
+     <div className="arrow">
+     <FaAngleLeft className="arrowL" onClick={handleLeft}/>
+   <FaAngleRight className="arrowR" onClick={handleRight}/>
+     </div>
+  
+   
+  </div>
+   
   )
 }
 
