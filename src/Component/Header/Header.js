@@ -43,7 +43,7 @@ const Header = () => {
     <Paper  style={{ height: '100vh', paddingTop:'1rem' }} elevation={0}>
     <Paper variant='outlined' elevation={2} className='side-paper' style={{ width: '60%', height:'200px', backgroundColor:'#bb0a21', margin: '0 auto',padding:'2rem 1rem', overflow:'hidden', borderRadius:'10px' }}>
     <h2 style={{ color:'#fff' }}>Click to view my resume</h2>
-     <Button className='side-button' variant="outlined" style={{ color:'white', borderColor:'white', marginLeft:'30px',marginTop:'10px' }} onClick={()=> {setIsclicked(!isClicked)}}>{isClicked?'Clicked...':'click'}</Button>
+     <Button className='side-button' variant="outlined" style={{ color:'white', borderColor:'white', marginLeft:'30px',marginTop:'10px' }} onClick={()=> {setIsclicked(!isClicked)}}>{isClicked?'Clicked':'click'}</Button>
     </Paper>
     {isClicked?<Resume/>:<Skills/>}
     </Paper>

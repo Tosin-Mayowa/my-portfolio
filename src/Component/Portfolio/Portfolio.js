@@ -35,16 +35,17 @@ const handleRight=()=>{
 }
   return (
    <div className='Portfolio'>
-   <h2  className='Portfolio-H'>Project slide and GitHub links</h2>
+   <h2  className='Portfolio-H'>Project and GitHub links</h2>
    <Paper elevation={0} className='card'>
    <h3>{title}</h3>
       <p>{text}</p>
       <a href={src}><FaGithub size={25}/></a>
+     
    </Paper>
      <div className="arrow">
      <FaAngleLeft className="arrowL" onClick={handleLeft}/>
    <FaAngleRight className="arrowR" onClick={handleRight}/>
-     </div>
+   </div>
   
    
   </div>

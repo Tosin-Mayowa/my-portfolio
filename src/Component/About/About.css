@@ -5,11 +5,12 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
 
 }
 
 .About-left {
-    padding: 1rem 1rem;
+    padding: 1rem 1.5rem;
     text-align: center;
 
 
@@ -18,14 +19,14 @@
 
 .About-Hl {
     color: #fff;
-    font-size: 42px;
-    font-weight: 700;
-
+    font-size: 32px;
+    font-weight: 600;
+    margin-left: -22px;
 }
 
 .About-Hl>small {
     color: #bb0a21;
-    font-size: 30px;
+    font-size: 28px;
 }
 
 /* About right*/
@@ -34,6 +35,12 @@
     color: #fff;
     font-size: 16px;
     font-weight: 400;
+    
+}
+
+.About-right{
+    margin-left: 6px;
+   
 }
 
 .About-Rp>span {
@@ -56,6 +63,9 @@
 
     .About-right {
         padding-left: 3px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
     }
 
     .About-Hl {
@@ -63,7 +73,7 @@
         font-size: 32px;
         font-weight: 700;
         margin-top: 50px;
-
+        margin-left: 0px;
     }
 
     .About-Hl>small {

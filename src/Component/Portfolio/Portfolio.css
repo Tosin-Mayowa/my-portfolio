@@ -43,28 +43,43 @@
 
 }
 
+.btn {
+    display: none !important;
+}
 
 @media(max-width:960px) {
 
     .arrowR {
-        margin-left: 270px !important;
+        margin-left: 150px !important;
 
     }
 
     .arrowL {
-        margin-left: 90px !important;
+        margin-left: 100px !important;
 
     }
 
     .card {
-        width: 350px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 200px;
     }
 
     .arrow {
         position: absolute;
         margin: 0 auto;
         margin-top: 350px;
+        display: none;
+    }
+
+    .btn {
+        display: block !important;
+        margin-bottom: -300px !important;
 
     }
 
+    .Portfolio{
+        position: unset;
+    }
 }
