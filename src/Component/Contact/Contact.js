@@ -5,7 +5,7 @@ const Contact = () => {
   const [name,setName]=useState('');
   const [email,setEmail]=useState('');
   const [num,setNum]=useState(null);
-  const [msg,setMsg]=useState('') 
+  
   const [isSubmit, setIsSubmit]=useState(true)
   const handleName=(e)=>{
     setName(e.target.value);
@@ -15,9 +15,7 @@ const Contact = () => {
     setEmail(e.target.value);
   }
 
-  const handleMsg=(e)=>{
-    setMsg(e.target.value);
-  }
+ 
 
   const handleNum=(e)=>{
     setNum(e.target.value);
@@ -29,7 +27,7 @@ const Contact = () => {
     setName('');
     setNum(null);
     setEmail('');
-    setMsg('');
+
 
   }
 useEffect(()=>{
