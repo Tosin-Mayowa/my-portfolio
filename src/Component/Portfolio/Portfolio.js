@@ -9,7 +9,6 @@ const data=[
 ]
 const Portfolio = () => {
 const [index,setIndex]=useState(0);
-const [state, setState]=useState(data)
 const dataContent=data[index];
 const {title,text,src}=dataContent;
 const handleLeft=()=>{
