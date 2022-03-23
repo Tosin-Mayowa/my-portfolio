@@ -23,6 +23,7 @@
     padding: 15px 8px;
     margin: 0 auto;
     margin-bottom: -300px;
+    z-index:-1;
 
 }
 
