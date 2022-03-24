@@ -28,6 +28,12 @@
     font-size: 28px;
 }
 
+.About-left {
+    padding: 0.5rem 0.5rem;
+    text-align: center;
+    width: 50%;
+}
+
 /* About right*/
 
 .About-Rp {
@@ -65,7 +71,7 @@
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        
+
     }
 
     .About-Hl {
