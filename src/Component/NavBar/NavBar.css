@@ -55,29 +55,19 @@
     border-bottom: 2px solid #247ba0;
 }
 
+
+
 @media(max-width:960px) {
     .menu-bar {
         display: block;
         z-index: 5;
     }
 
-    .link-show {
-        color: white;
-        text-decoration: none;
-    }
-
-    .link-show:focus {
-        color: #247ba0;
-    }
-
-    .link-show:hover {
-        color: #247ba0;
-
-    }
-
+    
     .Nav-ul {
         position: fixed;
         left: -100%;
+        
         /*it makes it hidden */
         flex-direction: column;
         justify-content: center;
