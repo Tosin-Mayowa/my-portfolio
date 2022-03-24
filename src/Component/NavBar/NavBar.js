@@ -14,7 +14,7 @@ const NavBar = () => {
 <a style={{color:'white'}} href='https://www.linkedin.com/in/tosin-adejumola-389992137' size={25}><FaLinkedin/></a>
 <a style={{ marginLeft:'6px', color:'white' }} href='https://github.com/Tosin-Mayowa/' size={25}><FaGithub/></a>
 </div>
-<ul className={isClick?'Nav-ul':'Nav-ul show'}>
+<ul className={isClick?'Nav-ul':'Nav-ul show'} onClick={()=>setIsClick(!isClick)}>
 <li className='Nav-item'><Link className={isClick?'Nav-link':'link-show'} to='/'>Home</Link></li>
 <li className='Nav-item'><Link className={isClick?'Nav-link':'link-show'} to='/about'>About me</Link></li>
 <li className='Nav-item'><Link className={isClick?'Nav-link':'link-show'} to='/portfolio'>Portfolio</Link></li>
