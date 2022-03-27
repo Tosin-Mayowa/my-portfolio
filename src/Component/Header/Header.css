@@ -1,8 +1,9 @@
 .Header-span {
     color: #000000;
 }
-.Typo-left{
-font-size: 42px;
+
+.Typo-left {
+    font-size: 42px;
 }
 
 .Avatar-div {
@@ -12,7 +13,7 @@ font-size: 42px;
 
 @media(max-width:768px) {
     .Avatar-title {
-        font-size: 25px;
+        font-size: 20px;
     }
 
     .side-paper {
@@ -26,10 +27,14 @@ font-size: 42px;
         margin: 10px auto !important;
     }
 
-    .side-button{
+    .side-button {
         width: 80px !important;
         font-size: 10px;
         height: auto;
-        
+
+    }
+
+    .Paper-Header{
+        font-size: 20px !important;
     }
 }
