@@ -17,7 +17,7 @@ const Header = () => {
        
    <Grid container >
    
-   <Grid item xs={12} md={6 } lg={6}>
+   <Grid item xs={12} md={12 } lg={6}>
  
     <Paper className='Paper-Header' style={{ height: '100vh', padding:'1rem 1rem' }} elevation={0}>
     <div>
@@ -39,7 +39,7 @@ const Header = () => {
     </Paper>
     
    </Grid>
-   <Grid item  xs={12} md={6 } lg={6}>
+   <Grid item  xs={12} md={12 } lg={6}>
     <Paper  style={{ height: '100vh', paddingTop:'2rem' }} elevation={0}>
     <Paper variant='outlined' elevation={2} className='side-paper' style={{ width: '60%', height:'200px', backgroundColor:'#247ba0', margin: '0 auto',padding:'1rem 1rem', overflow:'hidden', borderRadius:'10px' }}>
     <h2 style={{ color:'#fff' }}>Click to view my resume</h2>

@@ -1,56 +1,45 @@
-import React,{useState} from 'react'
-import {Paper} from '@mui/material';
+import React from 'react';
+import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import './Portfolio.css';
-import {FaGithub,FaAngleLeft, FaAngleRight} from 'react-icons/fa'
-const data=[
-  {id:1, title:'My Portfolio Website', text:'I buit this project using React,Mui,React libraries',src:'https://github.com/Tosin-Mayowa/my-portfolio' },
-  {id:1, title:'Todo', text:'I buit this project using Reacthooks and MaterialUI',src:'https://github.com/Tosin-Mayowa/todo-app-hooks' }
-  
-]
-const Portfolio = () => {
-const [index,setIndex]=useState(0);
-const dataContent=data[index];
-const {title,text,src}=dataContent;
-const handleLeft=()=>{
-  if(index<0){
-    setIndex(data.length-1)
-  }
-   if(index>0){
-    setIndex(index-1)
-  }
-  if(index===0){
-     setIndex(index)
-  }
-}
-const handleRight=()=>{
- if(index<0){
-    setIndex(index+1)
-  }
-   if(index>0 && index<data.length-1 ){
-    setIndex(index+1)
-  }
-  if(index===0){
-     setIndex(index+1)
-  }
-}
-  return (
-   <div className='Portfolio'>
-   <h2  className='Portfolio-H'>Project and GitHub links</h2>
-   <Paper elevation={0} className='card'>
-   <h3>{title}</h3>
-      <p>{text}</p>
-      <a href={src}><FaGithub size={25}/></a>
-     
-   </Paper>
-     <div className="arrow">
-     <FaAngleLeft className="arrowL" onClick={handleLeft}/>
-   <FaAngleRight className="arrowR" onClick={handleRight}/>
-   </div>
+import {FaAddressBook} from 'react-icons/fa'
+
+
+function Portfolio(){
+
+ return (
+   <div className='container-fluid'>
+   <h2  className='Portfolio-H'>Project Cards</h2>
+  <div className="row">
+    <div className='col-xs-12 col-md-6 col-lg-4 p-1 mb-2 card'>
+        <h3 className='card-title'>My Portfolio Website</h3>
+        <p>I buit this project using React,Mui,React libraries</p>
+        <a href='https://eweb.com'><FaAddressBook size={20}/></a>
+    </div>
+
+    <div className='col-xs-12 col-md-6 col-lg-4 mb-2 p-1 card'>
+        <h3 className='card-title'>Todo App</h3>
+        <p>I buit this project using Reacthooks and Material UI</p>
+        <a href='https://eweb.com'><FaAddressBook size={20}/></a>
+    </div>
+
+     <div className='col-xs-12 col-md-6 col-lg-4 p-1 mb-2 card'>
+        <h3 className='card-title'>sign in form</h3>
+        <p>This form has the ability to change from one language to anothe, you can also switch to dark mode, I used contextApi.</p>
+        <a href='https://eweb.com'><FaAddressBook size={20}/></a>
+    </div>
+  </div>
+    
   
    
   </div>
-   
+  
   )
+
 }
+
+ 
+   
+  
+  
 
 export default Portfolio;

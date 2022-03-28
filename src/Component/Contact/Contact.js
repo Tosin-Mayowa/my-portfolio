@@ -53,7 +53,7 @@ useEffect(()=>{
           id="outlined-multiline-static"
 
           multiline
-          rows={4}
+          rows={3}
           defaultValue="message"
         />
         <button style={{ marginTop:'5px',borderRadius:'5px', }}>submit</button>
