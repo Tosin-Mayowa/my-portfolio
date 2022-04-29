@@ -2,6 +2,7 @@ import React from 'react'
 import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 import './About.css';
+import Mayowa from '../Image/Mayowa.jpg';
 const About = () => {
   return (
     <div className='container-fluid About mt-0'>
@@ -20,7 +21,9 @@ I graduated at the top of my class with <span>Distinction</span>. As a good Math
 <span  className='pa'>I am the guy that used is house rent to buy Laptop,I had to stay at friends place for months , enter into loan to pay for my courses,this is how much I love to code and to acquire Knowledge.</span>
 
 </p>
-    
+   <div class="text-center">
+  <img src={Mayowa} class="img-thumbnail Image"  alt="..."/>
+</div>
     </diV>
     </div>
     

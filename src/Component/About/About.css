@@ -1,8 +1,11 @@
 .About {
     background: #000000;
+height: 100vh;
+}
 
-
-
+.Image{
+    margin-top: 10px;
+    height:300px !important;
 }
 
 .About-left {
