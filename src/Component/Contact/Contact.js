@@ -6,7 +6,7 @@ const Contact = () => {
   const [email,setEmail]=useState('');
   const [num,setNum]=useState(null);
   
-  const [isSubmit, setIsSubmit]=useState(true)
+  const [isSubmit, setIsSubmit]=useState(false)
   const handleName=(e)=>{
     setName(e.target.value);
   }
@@ -56,14 +56,14 @@ useEffect(()=>{
           rows={3}
           defaultValue="message"
         />
-        <button style={{ marginTop:'5px',borderRadius:'5px', }}>submit</button>
+        <button style={{ marginTop:'5px',borderRadius:'5px' }}>submit</button>
     </form>
       </div>
       
   :
      
       <div>
-       <h3 className='Form-titletwo' style={{ marginTop:'10px' }}>Thank you for your message</h3>
+       <h3 className='Form-titletwo' style={{ marginTop:'10px', color:'#fff' }}>Thank you for your message</h3>
        </div>
      
      

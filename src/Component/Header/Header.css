@@ -11,6 +11,16 @@
 
 }
 
+.side-button {
+    margin-left: '50px' !important;
+    margin-top: '40px' !important;
+    border: 4px solid #fff !important;
+    border-radius: 30px 0 !important;
+    background-color: #000000 !important;
+    color: white !important;
+    text-align: center;
+}
+
 @media(max-width:768px) {
     .Avatar-title {
         font-size: 20px;
@@ -28,13 +38,17 @@
     }
 
     .side-button {
-        width: 80px !important;
+        margin-left: '30px';
+        margin-top: '10px';
+        width: 80px;
         font-size: 10px;
         height: auto;
-
+        border: 10px solid #247ba0;
+        border-radius: 50px 0;
+        background-color: #000000;
     }
 
-    .Paper-Header{
+    .Paper-Header {
         font-size: 20px !important;
     }
 }
