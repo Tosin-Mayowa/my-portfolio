@@ -2,6 +2,20 @@
     color: #000000;
 }
 
+.Paper {
+    height: 150px;
+    width: 60%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 1rem 1rem;
+    background-color: #247ba0;
+    border-radius: 50px;
+}
+
+
+
+    
+
 .Typo-left {
     font-size: 42px;
 }
@@ -38,10 +52,10 @@
     }
 
     .side-button {
-        margin-left: 30%;
-    
+        margin-left: 15% !important;
+
         margin-top: 20%;
-        width: 80px;
+        
         font-size: 10px;
         height: auto;
         border: 2px solid #fff !important;

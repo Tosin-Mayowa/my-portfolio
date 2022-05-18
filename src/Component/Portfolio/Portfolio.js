@@ -1,7 +1,8 @@
 import React from 'react';
 import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import './Portfolio.css';
-import {FaAddressBook} from 'react-icons/fa'
+import {FaAddressBook} from 'react-icons/fa';
+import Cart from '../Image/shopping-cart.jpg';
 
 
 function Portfolio(){
@@ -11,6 +12,7 @@ function Portfolio(){
    <h2  className='Portfolio-H'>Project Cards</h2>
   <div className="row">
     <div className='col-xs-12 col-md-6 col-lg-4 mb-2 p-1 card'>
+         <img src={Cart} class="card-img-top" alt="..." />
         <h3 className='card-title'>Shopping Cart</h3>
         <p>I built this cart using react-redux,redux core libraries,hooks and Bootstrap for design,all data used are in the application</p>
         <a href='https://shopping-cart-psi-ten.vercel.app/'><FaAddressBook size={20}/></a>

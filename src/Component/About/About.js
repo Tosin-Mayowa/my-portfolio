@@ -9,6 +9,11 @@ const About = () => {
     <div className='row'>
     <div className='col-xs-12 col-md-12 col-lg-4 About-Hl'>
     <h1 className=' text-white '><small className='small'>Meet</small> <br/> Mayowa Tosin Adejumola</h1>
+    <div className="balls">
+            <div className="one"></div>
+            <div className="two"></div>
+            <div className="three"></div>
+    </div>      
     </div>
     <diV className='col-xs-12 col-md-12 col-lg-8 p-4 mt-3 text-white'>
     <p className='Abt-Rp'>
