@@ -41,7 +41,7 @@ useEffect(()=>{
     <h2 className='Form-title'>contact</h2>
     <p style={{ color:'white',textAlign:'center', fontStyle:'italic' }}>+2348069827799,+2347010348022 <br/> toss800@gmail.com <br/>17,Love Estate IKorodu, Lagos Nigeria.</p>
   
-  { isSubmit?
+  { !isSubmit?
    <div className="container"  style={{ width:'40%'}}>
      <h3 className='Form-titletwo'>Leave me a message</h3>
   <form className='form' onSubmit={handleSubmit} style={{ color:'5px' }}>
