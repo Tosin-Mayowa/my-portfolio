@@ -4,7 +4,7 @@ import './Home.css';
 import About from '../About/About';
 import Portfolio from '../Portfolio/Portfolio';
 import Contact from '../Contact/Contact';
-
+import SlideShow from '../SlideShow/SlideShow';
  const Home=()=>{
 
     return(
@@ -12,6 +12,7 @@ import Contact from '../Contact/Contact';
         <Header/>
         <About/>
         <Portfolio/>
+        <SlideShow />
         <Contact/>
         </div>
     )

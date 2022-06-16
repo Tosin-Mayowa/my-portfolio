@@ -1,6 +1,7 @@
 import React,{useState,useEffect} from 'react'
 import { TextField} from '@mui/material';
 import './Contact.css';
+import Button from '../Button/Button'
 const Contact = () => {
   const [name,setName]=useState('');
   const [email,setEmail]=useState('');
@@ -37,6 +38,8 @@ useEffect(()=>{
 },[isSubmit])
  
   return (
+  
+     
 <div className='Form-div'>
     <h2 className='Form-title'>contact</h2>
     <p style={{ color:'white',textAlign:'center', fontStyle:'italic' }}>+2348069827799,+2347010348022 <br/> toss800@gmail.com <br/>17,Love Estate IKorodu, Lagos Nigeria.</p>
@@ -45,18 +48,26 @@ useEffect(()=>{
    <div className="container"  style={{ width:'40%'}}>
      <h3 className='Form-titletwo'>Leave me a message</h3>
   <form className='form' onSubmit={handleSubmit} style={{ color:'5px' }}>
-    <TextField onChange={ handleName} style={{ color:'white' }} className='Text-1'  label="Name" variant="standard" value={name} />
-    <TextField onChange={handleEmail} style={{ color:'white' }}   label="Email" variant="standard" value={email} />
-    <TextField onChange={handleNum} style={{ color:'white' }}   label="PhoneNo" variant="standard" value={num} />
-     <TextField
-     style={{ marginTop:'20px', color:'white'}}
-          id="outlined-multiline-static"
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Name</label>
+              <input type="text" data-testid="fnames" name="firstName" class="form-control" id="exampleFormControlInput1"/>
+            </div>
+              
+            <div class="mb-3">
+                <label for="exampleFormControlInput2" class="form-label">Email address</label>
+                <input type="email" data-testid="email" name="emailAdd" class="form-control" id="exampleFormControlInput2" />
+            </div>
 
-          multiline
-          rows={3}
-          defaultValue="message"
-        />
-        <button style={{ marginTop:'5px',borderRadius:'5px' }}>submit</button>
+                <div class="mb-3">
+                  <label for="exampleFormControlInput3" class="form-label">Email address</label>
+                  <input type="tel" data-testid="tel" class="form-control" id="exampleFormControlInput3" />
+            </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea4" class="form-label">Example textarea</label>
+                <textarea class="form-control" id="exampleFormControlTextarea4" rows="3"></textarea>
+              </div>
+  
+        <button>submit</button>
     </form>
       </div>
       
@@ -68,7 +79,9 @@ useEffect(()=>{
      
      
   } 
+      <Button />
 </div>
+
   )
 }
 

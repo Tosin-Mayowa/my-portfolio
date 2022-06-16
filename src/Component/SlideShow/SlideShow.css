@@ -1,0 +1,38 @@
+.banner {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../Image/pix2.jpg') no-repeat center/cover;
+
+    animation-name: myEffect;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: none;
+}
+
+@keyframes myEffect {
+    0% {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../Image/pix2.jpg') no-repeat center/cover;
+    }
+
+    50% {
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url('../Image/pix3.jpg') no-repeat center/cover;
+    }
+
+    100% {
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url('../Image/pix1.jpg') no-repeat center/cover;
+    }
+
+
+}
+
+.heading {
+    color: #fff;
+    font-size: 60px;
+    font-weight: 800;
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: 30%;
+}
