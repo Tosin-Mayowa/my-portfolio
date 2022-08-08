@@ -5,9 +5,9 @@ import './About.css';
 import Mayowa from '../Image/Mayowa.jpg';
 const About = () => {
   return (
-    <div className='container-fluid About mt-0'>
+    <div className='container-fluid About mt-0 h-75'>
     <div className='row'>
-    <div className='col-xs-12 col-md-12 col-lg-4 About-Hl'>
+    <div className='col-xs-12 col-md-12 col-lg-3 About-Hl'>
     <h1 className=' text-white '><small className='small'>Meet</small> <br/> Mayowa Tosin Adejumola</h1>
     <div className="balls">
             <div className="one"></div>
@@ -15,7 +15,7 @@ const About = () => {
             <div className="three"></div>
     </div>      
     </div>
-    <diV className='col-xs-12 col-md-12 col-lg-8 p-4 mt-3 text-white'>
+    <diV className='col-xs-12 col-md-12 col-lg-9 p-4 mt-3 h-100 text-white'>
     <p className='Abt-Rp'>
     I am a <span>Frontend Engineer with two years of experience. </span>I love Javascript, and I can tell you that is my strength,I love to make things work,solving complex problems.
     I have good knowledge of the following react stacks: Hooks,NEXTjs,React Router, Context Api,Redux,Material UI,Redux,React Query,Jest etc..
