@@ -31,7 +31,7 @@ function Portfolio(){
      <div className='col-xs-12 col-md-6 col-lg-4 p-1 mb-2 card'>
          <img src={Sharp} className="card-img-top" alt="..." />
         <h3 className='card-title'>SharpSharp</h3>
-        <p>This is a fullstack Ecommerce platform, built with Nextjs,Typescript,React Table,Chakra-Ui,and using Nextjs Api server for the backend and axios custom instance for API calls. Code n github for your reference. </p>
+        <p>This is a fullstack Ecommerce platform, built with Nextjs,Typescript,React Table,Chakra-Ui,and using Nextjs Api server for the backend and axios custom instance for API calls. Code in github for your reference. </p>
      
          <a href='https://github.com/Tosin-Mayowa/sharpsharp-ecomm' class="text-decoration-none">View</a>
     </div>
