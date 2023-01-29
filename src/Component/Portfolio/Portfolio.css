@@ -9,13 +9,12 @@
 
 .card {
 
-    background: #247ba0;
+    background: #fff;
     border-radius: 10px;
     border: 2px solid black;
 
-
-
 }
+
 
 
 
@@ -24,6 +23,7 @@
 .card-title {
     font-size: 20px;
     text-transform: capitalize;
+    margin-top: 15px;
 }
 
 .card-text {
