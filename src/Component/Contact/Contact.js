@@ -24,7 +24,7 @@ const Contact = () => {
 
   const handleSubmit=(e)=>{
     e.preventDefault();
-    setIsSubmit(!isSubmit);
+    setIsSubmit(true);
     setName('');
     setNum(null);
     setEmail('');
@@ -32,9 +32,10 @@ const Contact = () => {
 
   }
 useEffect(()=>{
-  setTimeout(()=>{
-  setIsSubmit(true);
-},3000)
+ if (isSubmit)
+   setTimeout(() => {
+     setIsSubmit(false);
+   }, 3000);
 },[isSubmit])
  
   return (
@@ -45,6 +46,10 @@ useEffect(()=>{
     <p style={{ color:'white',textAlign:'center', fontStyle:'italic' }}>+2348069827799,+2347010348022 <br/> toss800@gmail.com <br/>17,Love Estate IKorodu, Lagos Nigeria.</p>
   
   { isSubmit?
+      <div>
+       <h3 className='Form-titletwo' style={{ marginTop:'10px', color:'#fff' }}>Thank you for your message</h3>
+       </div>:
+
    <div className="container"  style={{ width:'40%'}}>
      <h3 className='Form-titletwo'>Leave me a message</h3>
   <form className='form' onSubmit={handleSubmit} style={{ color:'5px' }}>
@@ -59,7 +64,7 @@ useEffect(()=>{
             </div>
 
                 <div class="mb-3">
-                  <label for="exampleFormControlInput3" class="form-label">Email address</label>
+                  <label for="exampleFormControlInput3" class="form-label">Telephone</label>
                   <input type="tel" data-testid="tel" class="form-control" id="exampleFormControlInput3" />
             </div>
               <div class="mb-3">
@@ -71,11 +76,8 @@ useEffect(()=>{
     </form>
       </div>
       
-  :
+  
      
-      <div>
-       <h3 className='Form-titletwo' style={{ marginTop:'10px', color:'#fff' }}>Thank you for your message</h3>
-       </div>
      
      
   } 
